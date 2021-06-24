@@ -1,0 +1,252 @@
+*
+{
+  margin: 0px;
+  padding: 0px; 
+  outline: none;
+  border: 0px;
+}
+html{
+  background-color: rgb(44, 62, 80);
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav{
+  background-color: #4F7978;
+  width:100%;
+}
+nav.active
+{
+    background-color:black;
+}
+nav a{
+  display:inline-block;
+  color: white;
+  padding: 20px 20px; 
+  text-decoration: none;
+  width: 100%;
+}
+nav ul li {
+  text-align: center;
+  display:inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0 0 0 160px;
+    z-index: 1;
+}
+.search {
+  position: absolute;
+  left:30%;
+  top:80%;
+  width: 600px; 
+  height: 40px;
+  text-align: left;
+  font-size: x-large;
+  border-style: hidden;
+  padding: 10px;
+    visibility: hidden;
+}
+.searchbtn{
+  position: absolute;
+  left:63.75%;
+  top:80.2%;
+  width:50px;
+  height:54.75px;
+  border-style: none;
+  font-size: large;
+  color: white;
+  background-color: rgb(139, 39, 39);
+    visibility: hidden;
+}
+.logo img{
+  padding: 0 0 0 10px;
+  position: absolute;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+
+}
+.dropdown-content a:hover {
+  background-color: #ddd; /* background color of hovered item*/
+  max-width: 128px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+.dropdown:hover .dropbtn { /* keeps main button highlighted */
+  background-color:lightgreen;
+}
+.arrowdown {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+a { 
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+nav.a:hover{
+  background-color: lightgreen;
+}
+div.booknames 
+{
+    font-size:40px;
+    color:rgb(44, 62, 80);
+}
+div.booknames > span
+{
+    font-size:80px;
+    margin:0px 30px;
+}
+div.bookimgs > img
+{
+  height:400px;
+  margin:0px 65px;
+    margin-top: 60px;
+}
+div.bookimgs img:hover
+{
+    height:500px;
+    transition: 0.7s ease;
+}
+h1
+{
+    color:#F9B299;
+    font-family: serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    outline-color: black;
+    outline: inherit;
+    margin-left:20px;
+    margin-top: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    outline-width: thick;
+    outline-color: white;
+}
+
+a { 
+  color: blue;
+  text-decoration: none;
+}
+nav a:hover{ 
+  background-color: lightgreen;
+}
+.book{
+  height: 300px; width: 300px;  
+   text-align: center;
+   font-family: cursive;
+   margin-left: 40%;
+    text-align: center;
+   display: block;
+    margin-top: 60px;
+}
+
+.author{
+  font-family:cursive; 
+  font-size: larger;
+  margin-right: 10%;
+  color:#F9B299;
+    margin-left: 140px;
+}
+hr {
+  clear:both;
+  display:block;
+  width: 100%;
+  background-color:white;
+  height:3px;
+    margin-top:40px;
+}
+ul p
+{
+    font-size: x-large;
+    margin-left:44%;
+    font-family:cursive;
+    margin-top:-30px;
+    margin-bottom: 40px;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+
+
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #818181;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+    cursor: pointer;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}

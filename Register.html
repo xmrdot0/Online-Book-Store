@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Html For Beginners">
+        <title>Judio</title>
+         <link rel="icon" type="image/png" / href=".png" />
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="homepageCSS.css"/>
+       
+        <script src="javascript.js"></script>
+
+    </head>
+    <body>
+ <div class="logo"><img src=".png" alt="PI CAKE" width="98px" height="70px"></div>
+    <nav style="font-size:x-large;">
+  <ul>
+    <li><a href="Register.html">Login/Register</a></li>
+
+    <li class="dropdown"> <a class="dropbtn"> Categories <i class="arrowdown"></i> </a>
+            <div id="temp" class="dropdown-content">
+                <a href="drama.html">Drama</a>
+                <a href="comedy.html">Comedy</a>
+                <a href="action.html">Action</a>
+            </div>
+        </li>
+
+    <li><a href="Authors.html">Authors</a> </li>
+    <li><a href="MyLibrary.html">My library</a></li>
+    <li><a href="Contact%20Us.html">Contact Us</a></li>
+  </ul>
+        </nav>
+        <section>
+             
+            <div class="container">
+                <div class="user singinBx">
+                    <div class= "imgBx"><img src="signnew.png"></div>
+                    <div class="formBx">
+                         <form id="acti">
+                         <h2>Sign In</h2>
+                        <input id="usr" type="text" name="" placeholder="Username">
+                        <input id="psw" type="password" name="" placeholder="Password">
+                        <input type="submit" name="" value="Login" onclick="admin();">
+                        <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                         </form>
+                     </div>
+                </div>
+                <div class="user singupBx">
+                    
+                    <div class="formBx">
+                         <form name="registrationForm" onsubmit="return validateForm()">
+                         <h2>Create an Account</h2>
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <input type="password" name="password" placeholder="Create Password">
+                        <input type="password" name="" placeholder="Confirm Password">
+                        <input type="submit" name="" value="Sign Up" >
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm()">Sign in.</a></p>
+                         </form>
+                     </div>
+                    <div class= "imgBx"><img src="signupnew.png"></div>
+                </div>
+            </div>   
+        </section>
+        <script>
+            function toggleForm()
+            {
+                var container=document.querySelector('.container');
+                container.classList.toggle('active')
+            };
+            function admin()
+            {
+            if (document.getElementById("usr").value == "admin" && 
+            document.getElementById("psw").value == "admin")
+            {
+                document.getElementById("acti").action="admin.html";
+            }
+            else
+            {
+                document.getElementById("acti").action="MyAccount.html";
+            }
+            }
+
+function validateForm() {
+var valid = true;
+if(document.registrationForm.username.value==""){
+alert("username is empty");
+document.registrationForm.username.focus();
+valid=false; }
+else if(document.registrationForm.email.value==""){
+alert("Email is empty");
+document.registrationForm.email.focus();
+valid=false; }
+else{
+if(document.registrationForm.email.value.indexOf("@")==-1||document.registrationForm.email.value.indexOf(".com")==-1){
+alert("Please Enter valid email");
+valid=false; }
+}
+return valid;
+} </script> 
+    </body>
+</html>
